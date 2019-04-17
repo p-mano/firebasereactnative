@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react'
 import {
   View,
   Button,
@@ -6,7 +6,7 @@ import {
   StyleSheet
 } from 'react-native'
 
-export default class Registration extends Component {
+export default class Registration extends React.Component {
   state = {
     username: '', password: '', email: '', phone_number: ''
   }
@@ -58,8 +58,6 @@ export default class Registration extends Component {
         <Button
           title='Sign Up'
           onPress={this.signUp}
-
-          style={{backgroundColor:'orange'}}
         />
       </View>
     )
@@ -70,7 +68,7 @@ const styles = StyleSheet.create({
   input: {
     width: 350,
     height: 55,
-    backgroundColor: 'orange',
+    backgroundColor: '#42A5F5',
     margin: 10,
     padding: 8,
     color: 'white',
